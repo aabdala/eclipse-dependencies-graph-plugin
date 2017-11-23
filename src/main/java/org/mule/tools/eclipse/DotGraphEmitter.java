@@ -75,10 +75,10 @@ public class DotGraphEmitter<T> implements GraphEmitter<T> {
         b.append("\"").append(printNode(key)).append("\"") //
             .append(connector).append(" { ");
         for (T value : values) {
-          b.append("\"").append(printNode(value)).append("\"");
+          b.append("\"").append(printNode(value)).append("\" ");
 
         }
-        b.append(" };");
+        b.append("};");
       });
     }
     emitter.endSection();
